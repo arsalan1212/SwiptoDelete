@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arsalankhan.swiptodelete.MainActivity">
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"></include>
+
+    <include layout="@layout/empty_view"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/emptyview"
+        android:layout_below="@id/toolbar"></include>
+
+
+    <com.example.arsalankhan.swiptodelete.RecyclerAdapter
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/toolbar">
+    </com.example.arsalankhan.swiptodelete.RecyclerAdapter>
+
+
+
+</RelativeLayout>
